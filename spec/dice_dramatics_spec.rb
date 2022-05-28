@@ -20,8 +20,8 @@ RSpec.describe DiceDramatics do
         end
         it "calculates the dice total correctly for multiple dice" do
           400.times do
-            result = DiceDramatics.total_dice(6)
-            expect(result).to be_between(1, 6)
+            result = DiceDramatics.total_dice(6, 3)
+            expect(result).to be_between(3, 18)
           end
         end
       end
