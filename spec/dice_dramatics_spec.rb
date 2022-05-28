@@ -14,8 +14,14 @@ RSpec.describe DiceDramatics do
       context "with no options" do
         it "calculates the dice total correctly for a single dice" do
           400.times do
-          result = DiceDramatics.total_dice(6)
-          expect(result).to be_between(1, 6)
+            result = DiceDramatics.total_dice(6)
+            expect(result).to be_between(1, 6)
+          end
+        end
+        it "calculates the dice total correctly for multiple dice" do
+          400.times do
+            result = DiceDramatics.total_dice(6)
+            expect(result).to be_between(1, 6)
           end
         end
       end
