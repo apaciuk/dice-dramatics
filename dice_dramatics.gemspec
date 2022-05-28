@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ["info@xhostcom.com"]
 
   spec.summary = "Rubygem dice role playing game."
-  spec.description = "To roll polyhedral dice and add bonuses as you would in a tabletop roleplaying game. You can choose to roll multiple dice and keep a specified number of dice such as rolling 4d6 and dropping the lowest for ability scores or rolling with advantage and disadvantage if those mechanics exist in your game.."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.description = "To roll polyhedral dice and add bonuses as you would in a tabletop roleplaying game"
+  spec.homepage = "https://github.com/xhostcom/dice-dramatics.git"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
@@ -32,7 +32,4 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
-
-  # For more information and examples about making a new gem, check out our
-  # guide at: https://bundler.io/guides/creating_gem.html
 end
