@@ -5,11 +5,11 @@ require_relative "lib/dice_dramatics/version"
 Gem::Specification.new do |spec|
   spec.name = "dice_dramatics"
   spec.version = DiceDramatics::VERSION
-  spec.authors = ["TODO: Write your name"]
-  spec.email = ["TODO: Write your email address"]
+  spec.authors = ["Paul Anthony McGowan"]
+  spec.email = ["info@xhostcom.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.summary = "Rubygem dice role playing game."
+  spec.description = "To roll polyhedral dice and add bonuses as you would in a tabletop roleplaying game. You can choose to roll multiple dice and keep a specified number of dice such as rolling 4d6 and dropping the lowest for ability scores or rolling with advantage and disadvantage if those mechanics exist in your game.."
   spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
@@ -17,8 +17,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = spec.homepage
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
