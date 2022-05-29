@@ -35,9 +35,9 @@ RSpec.describe DiceDramatics::Totals do
           end
         end
         it "calculates with a negative penalty correctly" do
-          400.times do |i|
+          400.times do
             result = DiceDramatics::Totals.total_dice(6, 3, { penalty: -5 })
-            expect(result).to be_between(-2, 12)
+            expect(result).to be_between(-2, 13)
           end
         end
       end
