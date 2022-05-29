@@ -5,10 +5,6 @@ RSpec.describe DiceDramatics do
     expect(DiceDramatics::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(false)
-  end
-
   describe "class methods" do
     describe "total_dice method" do
       context "with no options" do
@@ -24,6 +20,18 @@ RSpec.describe DiceDramatics do
             expect(result).to be_between(3, 18)
           end
         end
+      end
+      context "with options" do
+        it "calculates with a positive bonus correctly" do
+
+        end
+        it "calculates with a zero bonus correctlyy" do
+
+        end
+        it "calculates with a negative penalty correctly" do
+
+        end
+
       end
     end
   end
