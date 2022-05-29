@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
-RSpec.describe DiceDramatics do
+RSpec.describe DiceDramatics::Totals do
   it "has a version number" do
     expect(DiceDramatics::VERSION).not_to be nil
   end
 
   describe "class methods" do
+    let(:dice_dramatics) { DiceDramatics }
     describe "total_dice method" do
       context "with no options" do
         it "calculates the dice total correctly for a single dice" do
@@ -25,7 +26,7 @@ RSpec.describe DiceDramatics do
         it "calculates with a positive bonus correctly" do
           400.times do
             result = DiceDramatics.total_dice(6, 3, bonus: 2)
-            expect(result).to be_between(5, 22)
+            expect(result).to be_between(5, 20)
           end
         end
         it "calculates with a zero bonus correctlyy" do
