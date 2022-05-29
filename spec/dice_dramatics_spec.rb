@@ -23,15 +23,23 @@ RSpec.describe DiceDramatics do
       end
       context "with options" do
         it "calculates with a positive bonus correctly" do
-
+          400.times do
+            result = DiceDramatics.total_dice(6, 3, bonus: 2)
+            expect(result).to be_between(5, 22)
+          end
         end
         it "calculates with a zero bonus correctlyy" do
-
+          400.times do
+            result = DiceDramatics.total_dice(6, 3, bonus: 0)
+            expect(result).to be_between(3, 18)
+          end
         end
         it "calculates with a negative penalty correctly" do
-
+          400.times do |i|
+            result = DiceDramatics.total_dice(6, 3, penalty: -i)
+            expect(result).to be_between(1, 12)
+          end
         end
-
       end
     end
   end
